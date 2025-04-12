@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theogene Habimana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="bg-white">
+  <header class="relative h-[60vh] flex items-center justify-center">
+    <img src="abc.jpg" alt="Background" class="absolute w-full h-full object-cover z-[-1]">
+    <div class="text-white text-5xl font-bold z-10 drop-shadow-lg">
+      <h1>Welcome!</h1>
+    </div>
+    <nav class="navigation">
+        <h2 class="ml-5 text-2xl">Theogene Habimana</h2>
+        <ul class="flex gap-5 mr-5 ml-auto">
+          <li><a href="index.html" class="font-bold underline">Home</a></li>
+          <li><a href="#" class="font-bold underline">Teaching</a></li>
+          <li><a href="#" class="font-bold underline"><i class="fa fa-search"></i> Search</a></li>
+        </ul>
+      </nav>
+      
+  </header>
+
+  <section class="px-10 py-8 text-gray-900 space-y-4">
+    
+  </section>
+<section>
+  <div class="list-section">
+    <ul>
+ 
+        <li>Finance</li>
+        <li>Analytical Skills</li>
+        <li>Project Management</li>
+        <li>Machine Learning</li>
+      
+    </ul>
+</section>
+  <section class="px-10 py-6 space-y-6 text-gray-900">
+   
+  </section>
+  <script>
+    // Get the search icon, input, and navigation elements
+    const searchIcon = document.getElementById('searchIcon');
+    const searchWrapper = document.getElementById('searchWrapper');
+    const searchInput = document.getElementById('searchInput');
+    const backArrow = document.getElementById('backArrow');
+    const navigation = document.querySelector('.navigation');
+
+    // Add an event listener for the search icon click
+    searchIcon.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default link behavior (if any)
+      
+      // Show the search wrapper and change the nav background color
+      searchWrapper.classList.remove('hidden');
+      navigation.classList.add('bg-gray-800'); // Change background color
+    });
+
+    // Add an event listener for the back arrow click
+    backArrow.addEventListener('click', function() {
+      // Hide the search wrapper and reset the nav background color
+      searchWrapper.classList.add('hidden');
+      navigation.classList.remove('bg-gray-800');
+    });
+
+    // Function to check the scroll position
+    function checkScroll() {
+      if (window.scrollY > 0) {
+        // Add the 'fixed' class to make it fixed and change the background
+        navigation.classList.add('fixed');
+      } else {
+        // Remove the 'fixed' class to restore the original state
+        navigation.classList.remove('fixed');
+      }
+    }
+
+    // Listen for the scroll event
+    window.addEventListener('scroll', checkScroll);
+
+    // Initial check in case the page is already scrolled
+    checkScroll();
+  </script>
+  
+</body>
+</html>
