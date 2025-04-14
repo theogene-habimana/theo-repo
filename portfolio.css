@@ -1,4 +1,7 @@
-/* Initial transparent background for the navigation */
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+ /* Initial transparent background for the navigation */
 .navigation {
     position: absolute; /* Keeps the navigation inside the header initially */
     top: 0;
@@ -67,11 +70,15 @@
     width: 100rem;
     height: auto;
 }
-.links{
-    display: inline;
+.image-content{
+  margin-top: 5%;
+  margin-right: 2%;
 }
-.links a{
-    color: blue;
+.image-content p{
+  font-size: 16px;
+}
+.keynote a{
+ color: blue;
 }
 .list-section{
     margin-left: 4%;
