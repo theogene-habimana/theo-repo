@@ -83,3 +83,61 @@ body{
 .list-section{
     margin-left: 4%;
 }
+
+/*  responsiviness styling */
+
+/* Hide nav links on small screens initially, show hamburger */
+@media (max-width: 768px) {
+  .navigation {
+    flex-wrap: wrap;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .navigation ul.show {
+    display: flex;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+}
+
+/* Default to visible on larger screens */
+@media (min-width: 769px) {
+  .navigation ul {
+    display: flex !important;
+    position: static !important;
+  }
+
+  #menuToggle {
+    display: none;
+  }
+
+}
+@media (max-width: 1200px) {
+  .image-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-section {
+    display: block; 
+  }
+
+  .image-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-content {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
+
