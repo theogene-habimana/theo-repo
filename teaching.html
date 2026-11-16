@@ -26,7 +26,9 @@
       <!-- Navigation Links -->
       <ul id="navLinks" class="flex gap-5 mr-5 ml-auto md:flex hidden flex-col md:flex-row bg-black md:bg-transparent absolute md:static top-full left-0 w-full md:w-auto text-center">
         <li><a href="index.html" class="font-bold underline">Home</a></li>
-        <li><a href="#" class="font-bold underline">Teaching</a></li>
+        <li><a href="teaching.html" class="font-bold underline" aria-current="page">Teaching</a></li>
+        <li><a href="cybersecurity.html" class="font-bold underline">Cybersecurity</a></li>
+        <li><a href="artificial-intelligence.html" class="font-bold underline">Artificial Intelligence</a></li>
         <li>
           <a href="#" class="font-bold underline" id="searchIcon">
             <i class="fa fa-search"></i>
@@ -72,6 +74,15 @@
     const searchInput = document.getElementById('searchInput');
     const backArrow = document.getElementById('backArrow');
     const navigation = document.querySelector('.navigation');
+
+    const toggleBtn = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggleBtn.addEventListener('click', () => navLinks.classList.toggle('show'));
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) navLinks.classList.remove('show');
+      });
+    });
 
     // Add an event listener for the search icon click
     searchIcon.addEventListener('click', function(event) {

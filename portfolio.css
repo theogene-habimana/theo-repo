@@ -141,3 +141,55 @@ body{
   }
 }
 
+
+/* Improvements for the four-page navigation and responsive layouts */
+.navigation {
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+}
+.navigation h2 { flex-shrink: 0; }
+.navigation ul { align-items: center; gap: 4px; }
+.navigation a { display: inline-block; padding: 8px 10px; }
+.navigation a[aria-current="page"] { color: #FFD700; }
+.navigation #searchWrapper { z-index: 1100; }
+.image-section img { width: 100%; max-width: 360px; height: auto; object-fit: contain; }
+.image-section { align-items: flex-start; }
+.image-content { min-width: 0; margin-top: 0; }
+@media (max-width: 1023px) {
+  .navigation { justify-content: space-between; flex-wrap: wrap; }
+  .navigation ul {
+    position: absolute !important;
+    top: 100%; left: 0; right: 0;
+    width: 100%; margin: 0;
+    display: none !important;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background-color: #000;
+    padding: 12px 16px;
+    text-align: left;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+  .navigation ul.show { display: flex !important; }
+  .navigation ul a { width: 100%; padding: 10px 12px; }
+  #menuToggle { display: block !important; margin-left: auto; }
+  .image-section { flex-direction: column; margin: 0 16px; }
+  .image-section img { max-width: 360px; }
+}
+@media (min-width: 1024px) {
+  .navigation ul { display: flex !important; position: static !important; }
+  #menuToggle { display: none !important; }
+}
+@media (max-width: 600px) {
+  .navigation { padding: 12px; }
+  .navigation h2 { font-size: 1.15rem; margin-left: 0; }
+  .image-section img { max-width: 100%; }
+  .image-content { margin: 10px 0 0; }
+}
+
+/* CV update: readable main sections and consistent links */
+.cv-section { line-height: 1.65; }
+.cv-section li { margin-bottom: 0.25rem; }
+.cv-section a:hover { text-decoration: underline; }
