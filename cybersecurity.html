@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Cybersecurity | Theogene Habimana</title>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="favicon.png" rel="icon" type="image/png"/><title>Cybersecurity Risks and Corporate Financial Resilience | Theogene Habimana</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
-<link href="portfolio.css" rel="stylesheet"/>
-</head>
-<body class="bg-white">
+<link href="portfolio.css" rel="stylesheet"/></head><body class="bg-white">
 <header class="relative h-[60vh] flex items-center justify-center">
 <img alt="Background" class="absolute w-full h-full object-cover z-[-1]" src="abc.jpg"/>
-<div class="text-white text-5xl font-bold z-10 drop-shadow-lg">
-<h1>Cybersecurity</h1>
-</div>
+<div class="text-white text-4xl md:text-5xl font-bold z-10 drop-shadow-lg text-center px-4"><h1>Cybersecurity Risks and Corporate Financial Resilience</h1></div>
 <nav class="navigation">
 <h2 class="ml-5 text-2xl">Theogene Habimana</h2>
 <!-- Mobile Menu Toggle Button -->
@@ -24,78 +17,27 @@
 <!-- Navigation Links -->
 <ul class="flex gap-5 mr-5 ml-auto md:flex hidden flex-col md:flex-row bg-black md:bg-transparent absolute md:static top-full left-0 w-full md:w-auto text-center" id="navLinks">
 <li><a class="font-bold underline" href="index.html">Home</a></li>
-<li><a class="font-bold underline" href="teaching.html">Teaching</a></li>
+<li><a class="font-bold underline" href="research-projects.html">Research and Projects</a></li>
 <li><a aria-current="page" class="font-bold underline" href="cybersecurity.html">Cybersecurity</a></li>
 <li><a class="font-bold underline" href="artificial-intelligence.html">Artificial Intelligence</a></li>
-<li>
-<a class="font-bold underline" href="#" id="searchIcon">
-<i class="fa fa-search"></i>
-</a>
-</li>
 </ul>
-<!-- Search Overlay -->
-<div class="absolute inset-0 bg-gray-800 bg-opacity-80 hidden flex items-center justify-center" id="searchWrapper">
-<button class="absolute left-4 text-white text-xl" id="backArrow">
-<i class="fa fa-arrow-left">.</i>
-</button>
-<input class="text-black p-2 rounded-md w-2/3" id="searchInput" placeholder="Search..." type="text"/>
-</div>
 </nav>
-</header>
-<main class="px-6 md:px-10 py-10 text-gray-900 max-w-5xl mx-auto min-h-[35vh]">
-<h2 class="text-3xl font-bold border-b pb-3 mb-5">Cybersecurity</h2>
-<!-- Add your cybersecurity content here when it is ready. -->
-<p class="text-gray-600">My current research in progress includes cybersecurity risk and corporate financing. Further research details will be added here.</p>
-</main>
-<script>
-    // Get the search icon, input, and navigation elements
-    const searchIcon = document.getElementById('searchIcon');
-    const searchWrapper = document.getElementById('searchWrapper');
-    const searchInput = document.getElementById('searchInput');
-    const backArrow = document.getElementById('backArrow');
-    const navigation = document.querySelector('.navigation');
-
-    const toggleBtn = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-    toggleBtn.addEventListener('click', () => navLinks.classList.toggle('show'));
-    document.querySelectorAll('#navLinks a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) navLinks.classList.remove('show');
-      });
-    });
-
-    // Add an event listener for the search icon click
-    searchIcon.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent the default link behavior (if any)
-      
-      // Show the search wrapper and change the nav background color
-      searchWrapper.classList.remove('hidden');
-      navigation.classList.add('bg-gray-800'); // Change background color
-    });
-
-    // Add an event listener for the back arrow click
-    backArrow.addEventListener('click', function() {
-      // Hide the search wrapper and reset the nav background color
-      searchWrapper.classList.add('hidden');
-      navigation.classList.remove('bg-gray-800');
-    });
-
-    // Function to check the scroll position
-    function checkScroll() {
-      if (window.scrollY > 0) {
-        // Add the 'fixed' class to make it fixed and change the background
-        navigation.classList.add('fixed');
-      } else {
-        // Remove the 'fixed' class to restore the original state
-        navigation.classList.remove('fixed');
-      }
-    }
-
-    // Listen for the scroll event
-    window.addEventListener('scroll', checkScroll);
-
-    // Initial check in case the page is already scrolled
-    checkScroll();
-  </script>
-</body>
-</html>
+</header><main class="research-projects-wrap"><div class="project-list"><article class="research-project-card" id="cybersecurity">
+<div class="project-heading"><i aria-hidden="true" class="fa-solid fa-shield-halved"></i><h3>Cybersecurity Risks and Corporate Financial Resilience</h3></div>
+<p class="project-tag">Research in progress</p>
+<h4>Research overview</h4><p class="research-overview">My ongoing research also includes a project funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490), which investigates the role of artificial intelligence (AI) and cybersecurity risks in corporate financing decisions using machine learning and computational text analysis. As part of this project, I have developed firm-level measures of AI adoption and cybersecurity risk by systematically extracting and analyzing information from corporate annual reports of companies across 91 countries. These measures provide a foundation for examining how emerging technologies and cybersecurity-related risks influence firms’ financing decisions and capital structures in both developed and emerging markets.</p>
+<div class="project-divider"></div><h4>Research materials</h4>
+<div class="project-resource-grid"><a aria-label="View Excel datasets for Cybersecurity Risks and Corporate Financial Resilience" class="resource-tile resource-link" href="#excel"><i aria-hidden="true" class="fa-regular fa-file-excel"></i><strong>Excel datasets</strong><span>View downloads</span></a><a aria-label="View Python scripts for Cybersecurity Risks and Corporate Financial Resilience" class="resource-tile resource-link" href="#code"><i aria-hidden="true" class="fa-solid fa-code"></i><strong>Python scripts</strong><span>View downloads</span></a><a aria-label="View Research results for Cybersecurity Risks and Corporate Financial Resilience" class="resource-tile resource-link" href="#results"><i aria-hidden="true" class="fa-solid fa-chart-column"></i><strong>Research results</strong><span>View downloads</span></a><a aria-label="View Methodology for Cybersecurity Risks and Corporate Financial Resilience" class="resource-tile resource-link" href="#methodology"><i aria-hidden="true" class="fa-regular fa-file-lines"></i><strong>Methodology</strong><span>View downloads</span></a></div></article><section aria-label="Downloadable research files" class="research-project-card"><h3 style="font-size:1.55rem;font-weight:bold;">Downloadable research materials</h3><p class="research-download-help">Download links will appear below after the research files are approved, uploaded to this repository, and listed in the project manifest. No research data are included in this template.</p><div class="research-downloads"><section class="download-group" id="excel"><h4><i aria-hidden="true" class="fa-regular fa-file-excel"></i> Excel datasets</h4><ul class="download-list" data-file-category="excel"><li>No files published yet.</li></ul></section><section class="download-group" id="code"><h4><i aria-hidden="true" class="fa-solid fa-code"></i> Python scripts</h4><ul class="download-list" data-file-category="code"><li>No files published yet.</li></ul></section><section class="download-group" id="results"><h4><i aria-hidden="true" class="fa-solid fa-chart-column"></i> Research results</h4><ul class="download-list" data-file-category="results"><li>No files published yet.</li></ul></section><section class="download-group" id="methodology"><h4><i aria-hidden="true" class="fa-regular fa-file-lines"></i> Methodology</h4><ul class="download-list" data-file-category="methodology"><li>No files published yet.</li></ul></section></div></section></div></main><script data-project="cybersecurity" defer="" src="research-downloads.js"></script><script>
+const toggle = document.getElementById('menuToggle');
+const links = document.getElementById('navLinks');
+if(toggle && links) {
+  toggle.setAttribute('aria-expanded','false');
+  toggle.setAttribute('aria-label','Toggle navigation');
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('show');
+    toggle.setAttribute('aria-expanded',String(isOpen));
+  });
+}
+const navigation = document.querySelector('.navigation');
+window.addEventListener('scroll',() => navigation.classList.toggle('fixed',window.scrollY>0),{passive:true});
+</script></body></html>
