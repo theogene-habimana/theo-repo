@@ -1,6 +1,19 @@
+
 {
   "excel": [],
-  "code": [],
+  "code": [
+    {
+      "title": "SEC EDGAR Cybersecurity Data Extraction",
+      "path": "Sec_Edgar_Data_extraction.py",
+      "description": "Download Python extraction script"
+    }
+  ],
   "results": [],
-  "methodology": []
+  "methodology": [
+    {
+      "title": "Cybersecurity Research Methodology",
+      "path": "Methodology_Cyber.pdf",
+      "description": "Download research methodology (PDF)"
+    }
+  ]
 }

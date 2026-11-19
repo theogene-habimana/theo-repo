@@ -1,43 +1,416 @@
-<!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-<link href="favicon.png" rel="icon" type="image/png"/><title>Cybersecurity Risks and Corporate Financial Resilience | Theogene Habimana</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
-<link href="portfolio.css" rel="stylesheet"/></head><body class="bg-white">
-<header class="relative h-[60vh] flex items-center justify-center">
-<img alt="Background" class="absolute w-full h-full object-cover z-[-1]" src="abc.jpg"/>
-<div class="text-white text-4xl md:text-5xl font-bold z-10 drop-shadow-lg text-center px-4"><h1>Cybersecurity Risks and Corporate Financial Resilience</h1></div>
-<nav class="navigation">
-<h2 class="ml-5 text-2xl">Theogene Habimana</h2>
-<!-- Mobile Menu Toggle Button -->
-<button class="text-white text-2xl md:hidden mr-5 ml-auto" id="menuToggle">
-<i class="fa fa-bars">.</i>
-</button>
-<!-- Navigation Links -->
-<ul class="flex gap-5 mr-5 ml-auto md:flex hidden flex-col md:flex-row bg-black md:bg-transparent absolute md:static top-full left-0 w-full md:w-auto text-center" id="navLinks">
-<li><a class="font-bold underline" href="index.html">Home</a></li>
-<li><a class="font-bold underline" href="research-projects.html">Research and Projects</a></li>
-<li><a aria-current="page" class="font-bold underline" href="cybersecurity.html">Cybersecurity</a></li>
-<li><a class="font-bold underline" href="artificial-intelligence.html">Artificial Intelligence</a></li>
-</ul>
-</nav>
-</header><main class="research-projects-wrap"><div class="project-list"><article class="research-project-card" id="cybersecurity">
-<div class="project-heading"><i aria-hidden="true" class="fa-solid fa-shield-halved"></i><h3>Cybersecurity Risks and Corporate Financial Resilience</h3></div>
-<p class="project-tag">Research in progress</p>
-<h4>Research overview</h4><p class="research-overview">My ongoing research also includes a project funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490), which investigates the role of artificial intelligence (AI) and cybersecurity risks in corporate financing decisions using machine learning and computational text analysis. As part of this project, I have developed firm-level measures of AI adoption and cybersecurity risk by systematically extracting and analyzing information from corporate annual reports of companies across 91 countries. These measures provide a foundation for examining how emerging technologies and cybersecurity-related risks influence firms’ financing decisions and capital structures in both developed and emerging markets.</p>
-<div class="project-divider"></div><h4>Research materials</h4>
-<div class="project-resource-grid"><a aria-label="View Excel datasets for Cybersecurity Risks and Corporate Financial Resilience" class="resource-tile resource-link" href="#excel"><i aria-hidden="true" class="fa-regular fa-file-excel"></i><strong>Excel datasets</strong><span>View downloads</span></a><a aria-label="View Python scripts for Cybersecurity Risks and Corporate Financial Resilience" class="resource-tile resource-link" href="#code"><i aria-hidden="true" class="fa-solid fa-code"></i><strong>Python scripts</strong><span>View downloads</span></a><a aria-label="View Research results for Cybersecurity Risks and Corporate Financial Resilience" class="resource-tile resource-link" href="#results"><i aria-hidden="true" class="fa-solid fa-chart-column"></i><strong>Research results</strong><span>View downloads</span></a><a aria-label="View Methodology for Cybersecurity Risks and Corporate Financial Resilience" class="resource-tile resource-link" href="#methodology"><i aria-hidden="true" class="fa-regular fa-file-lines"></i><strong>Methodology</strong><span>View downloads</span></a></div></article><section aria-label="Downloadable research files" class="research-project-card"><h3 style="font-size:1.55rem;font-weight:bold;">Downloadable research materials</h3><p class="research-download-help">Download links will appear below after the research files are approved, uploaded to this repository, and listed in the project manifest. No research data are included in this template.</p><div class="research-downloads"><section class="download-group" id="excel"><h4><i aria-hidden="true" class="fa-regular fa-file-excel"></i> Excel datasets</h4><ul class="download-list" data-file-category="excel"><li>No files published yet.</li></ul></section><section class="download-group" id="code"><h4><i aria-hidden="true" class="fa-solid fa-code"></i> Python scripts</h4><ul class="download-list" data-file-category="code"><li>No files published yet.</li></ul></section><section class="download-group" id="results"><h4><i aria-hidden="true" class="fa-solid fa-chart-column"></i> Research results</h4><ul class="download-list" data-file-category="results"><li>No files published yet.</li></ul></section><section class="download-group" id="methodology"><h4><i aria-hidden="true" class="fa-regular fa-file-lines"></i> Methodology</h4><ul class="download-list" data-file-category="methodology"><li>No files published yet.</li></ul></section></div></section></div></main><script data-project="cybersecurity" defer="" src="research-downloads.js"></script><script>
-const toggle = document.getElementById('menuToggle');
-const links = document.getElementById('navLinks');
-if(toggle && links) {
-  toggle.setAttribute('aria-expanded','false');
-  toggle.setAttribute('aria-label','Toggle navigation');
-  toggle.addEventListener('click', () => {
-    const isOpen = links.classList.toggle('show');
-    toggle.setAttribute('aria-expanded',String(isOpen));
-  });
-}
-const navigation = document.querySelector('.navigation');
-window.addEventListener('scroll',() => navigation.classList.toggle('fixed',window.scrollY>0),{passive:true});
-</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <title>
+    Cybersecurity Risks and Corporate Financial Resilience |
+    Theogene Habimana
+  </title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body class="bg-white">
+
+  <!-- HEADER -->
+
+  <header class="relative h-[60vh] flex items-center justify-center">
+
+    <img
+      src="abc.jpg"
+      alt="Background"
+      class="absolute w-full h-full object-cover z-[-1]"
+    >
+
+    <div class="text-white text-4xl md:text-5xl font-bold z-10 drop-shadow-lg text-center px-4">
+
+      <h1>
+        Cybersecurity Risks and Corporate Financial Resilience
+      </h1>
+
+    </div>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navigation">
+
+      <h2 class="ml-5 text-2xl">
+        Theogene Habimana
+      </h2>
+
+      <button
+        id="menuToggle"
+        type="button"
+        class="text-white text-2xl md:hidden mr-5 ml-auto"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <ul
+        id="navLinks"
+        class="flex gap-5 mr-5 ml-auto md:flex hidden flex-col md:flex-row bg-black md:bg-transparent absolute md:static top-full left-0 w-full md:w-auto text-center"
+      >
+
+        <li>
+          <a class="font-bold underline" href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a class="font-bold underline" href="research-projects.html">
+            Research and Projects
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="font-bold underline"
+            href="cybersecurity.html"
+            aria-current="page"
+          >
+            Cybersecurity
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="font-bold underline"
+            href="artificial-intelligence.html"
+          >
+            Artificial Intelligence
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- MAIN CONTENT -->
+
+  <main class="research-projects-wrap">
+
+    <div class="project-list">
+
+      <article class="research-project-card" id="cybersecurity">
+
+        <div class="project-heading">
+
+          <i
+            aria-hidden="true"
+            class="fa-solid fa-shield-halved"
+          ></i>
+
+          <h3>
+            Cybersecurity Risks and Corporate Financial Resilience
+          </h3>
+
+        </div>
+
+        <p class="project-tag">
+          Research in progress
+        </p>
+
+        <!-- RESEARCH OVERVIEW -->
+
+        <h4>Research overview</h4>
+
+        <p class="research-overview">
+          My ongoing research also includes a project funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490), which investigates the role of artificial intelligence (AI) and cybersecurity risks in corporate financing decisions using machine learning and computational text analysis. As part of this project, I have developed firm-level measures of AI adoption and cybersecurity risk by systematically extracting and analyzing information from corporate annual reports of companies across 91 countries. These measures provide a foundation for examining how emerging technologies and cybersecurity-related risks influence firms’ financing decisions and capital structures in both developed and emerging markets.
+        </p>
+
+        <div class="project-divider"></div>
+
+        <h4>Research materials</h4>
+
+        <!-- FOUR RESEARCH MATERIAL CARDS -->
+
+        <div class="project-resource-grid">
+
+          <!-- EXCEL DATASETS -->
+
+          <a
+            href="#excel"
+            class="resource-tile resource-link"
+            aria-label="View Cybersecurity Excel datasets"
+          >
+
+            <i
+              class="fa-regular fa-file-excel"
+              aria-hidden="true"
+            ></i>
+
+            <strong>Excel datasets</strong>
+
+            <span>View downloads</span>
+
+          </a>
+
+          <!-- PYTHON SCRIPTS: DIRECT DOWNLOAD -->
+
+          <a
+            href="files/cybersecurity/Sec_Edgar_Data_extraction.py"
+            download="Sec_Edgar_Data_extraction.py"
+            class="resource-tile resource-link"
+            aria-label="Download Cybersecurity Python script"
+          >
+
+            <i
+              class="fa-solid fa-code"
+              aria-hidden="true"
+            ></i>
+
+            <strong>Python scripts</strong>
+
+            <span>Download Python file</span>
+
+          </a>
+
+          <!-- RESEARCH RESULTS -->
+
+          <a
+            href="#results"
+            class="resource-tile resource-link"
+            aria-label="View Cybersecurity research results"
+          >
+
+            <i
+              class="fa-solid fa-chart-column"
+              aria-hidden="true"
+            ></i>
+
+            <strong>Research results</strong>
+
+            <span>View downloads</span>
+
+          </a>
+
+          <!-- METHODOLOGY: DIRECT DOWNLOAD -->
+
+          <a
+            href="files/cybersecurity/Methodology_Cyber.pdf"
+            download="Methodology_Cyber.pdf"
+            class="resource-tile resource-link"
+            aria-label="Download Cybersecurity methodology PDF"
+          >
+
+            <i
+              class="fa-regular fa-file-lines"
+              aria-hidden="true"
+            ></i>
+
+            <strong>Methodology</strong>
+
+            <span>Download PDF</span>
+
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- DOWNLOADABLE RESEARCH MATERIALS -->
+
+      <section
+        class="research-project-card"
+        aria-label="Downloadable research files"
+      >
+
+        <h3 style="font-size:1.55rem;font-weight:bold;">
+          Downloadable research materials
+        </h3>
+
+        <p class="research-download-help">
+          Download the available cybersecurity research methodology
+          and Python extraction script. Additional Excel datasets,
+          research results, and documentation will be added
+          as they become available for public release.
+        </p>
+
+        <div class="research-downloads">
+
+          <!-- EXCEL DATASETS -->
+
+          <section class="download-group" id="excel">
+
+            <h4>
+              <i
+                class="fa-regular fa-file-excel"
+                aria-hidden="true"
+              ></i>
+              Excel datasets
+            </h4>
+
+            <ul
+              class="download-list"
+              data-file-category="excel"
+            >
+              <li>No Excel datasets published yet.</li>
+            </ul>
+
+          </section>
+
+          <!-- PYTHON SCRIPTS -->
+
+          <section class="download-group" id="code">
+
+            <h4>
+              <i
+                class="fa-solid fa-code"
+                aria-hidden="true"
+              ></i>
+              Python scripts
+            </h4>
+
+            <ul
+              class="download-list"
+              data-file-category="code"
+            >
+
+              <li>
+                <a
+                  href="files/cybersecurity/Sec_Edgar_Data_extraction.py"
+                  download="Sec_Edgar_Data_extraction.py"
+                >
+                  SEC EDGAR Cybersecurity Data Extraction
+                  &#8595;
+                </a>
+                <small>Download Python extraction script</small>
+              </li>
+
+            </ul>
+
+          </section>
+
+          <!-- RESEARCH RESULTS -->
+
+          <section class="download-group" id="results">
+
+            <h4>
+              <i
+                class="fa-solid fa-chart-column"
+                aria-hidden="true"
+              ></i>
+              Research results
+            </h4>
+
+            <ul
+              class="download-list"
+              data-file-category="results"
+            >
+              <li>No research results published yet.</li>
+            </ul>
+
+          </section>
+
+          <!-- METHODOLOGY -->
+
+          <section class="download-group" id="methodology">
+
+            <h4>
+              <i
+                class="fa-regular fa-file-lines"
+                aria-hidden="true"
+              ></i>
+              Methodology
+            </h4>
+
+            <ul
+              class="download-list"
+              data-file-category="methodology"
+            >
+
+              <li>
+                <a
+                  href="files/cybersecurity/Methodology_Cyber.pdf"
+                  download="Methodology_Cyber.pdf"
+                >
+                  Cybersecurity Research Methodology
+                  &#8595;
+                </a>
+                <small>Download research methodology (PDF)</small>
+              </li>
+
+            </ul>
+
+          </section>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- LOAD RESEARCH FILE MANIFEST -->
+
+  <script
+    src="research-downloads.js"
+    data-project="cybersecurity"
+    defer
+  ></script>
+
+  <!-- MOBILE NAVIGATION -->
+
+  <script>
+
+    const toggle = document.getElementById('menuToggle');
+    const links = document.getElementById('navLinks');
+
+    if (toggle && links) {
+
+      toggle.addEventListener('click', () => {
+
+        const isOpen = links.classList.toggle('show');
+
+        toggle.setAttribute(
+          'aria-expanded',
+          String(isOpen)
+        );
+
+      });
+
+    }
+
+    // Fixed navigation on scroll
+
+    const navigation = document.querySelector('.navigation');
+
+    if (navigation) {
+
+      window.addEventListener(
+        'scroll',
+        () => {
+
+          navigation.classList.toggle(
+            'fixed',
+            window.scrollY > 0
+          );
+
+        },
+        { passive: true }
+      );
+
+    }
+
+  </script>
+
+</body>
+</html>
