@@ -244,3 +244,7 @@ button:not(:disabled),[role="button"]:not(:disabled){cursor:pointer;}
 .download-empty{color:#aaa;font-size:.92rem;margin:0;}
 .project-load-error{color:#b00020;}
 .research-project-card{scroll-margin-top:84px;}
+.download-title{display:block;color:#fff;}
+.download-list li{display:grid;gap:4px;justify-items:start;}
+.download-list a.download-button{display:inline-flex;align-items:center;gap:8px;margin-top:6px;padding:9px 16px;border:1px solid #f3d17a;border-radius:999px;color:#f3d17a;text-decoration:none;font-weight:700;font-size:.92rem;}
+.download-list a.download-button:hover,.download-list a.download-button:focus-visible{background:#f3d17a;color:#080808;outline:none;}

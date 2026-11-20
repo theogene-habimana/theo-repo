@@ -61,9 +61,17 @@
         const ul = el('ul', { class: 'download-list' });
         for (const item of items) {
           const li = el('li');
-          const a = el('a', { href: `files/${project.folder}/${encodeURIComponent(item.path)}`, download: '' }, (item.title || item.path) + ' ↓');
-          li.appendChild(a);
+          const ext = (item.path.split('.').pop() || '').toUpperCase();
+          const a = el('a', {
+            class: 'download-button',
+            href: `files/${project.folder}/${encodeURIComponent(item.path)}`,
+            download: item.path,
+            'aria-label': `Download ${item.title || item.path} (${ext})`
+          });
+          a.append(icon('fa-solid fa-download'), ' Download ' + ext);
+          li.append(el('strong', { class: 'download-title' }, item.title || item.path));
           if (item.description) li.appendChild(el('small', {}, item.description));
+          li.appendChild(a);
           ul.appendChild(li);
         }
         group.appendChild(ul);

@@ -65,7 +65,13 @@ window.RESEARCH_PROJECTS = [
       "excel": [],
       "code": [],
       "results": [],
-      "methodology": []
+      "methodology": [
+        {
+          "title": "Crowding-in Research Methodology",
+          "path": "Methodology_Crowding_in.pdf",
+          "description": "Download the data collection and measurement methodology (PDF)"
+        }
+      ]
     }
   }
 ];

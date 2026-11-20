@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.2 (2026-11-20)
+- Download links are now clear "Download PDF/PY" buttons that save the file with its original name.
+
+## 2.2.1 (2026-11-20)
+- Added the Crowding-in methodology PDF (`files/crowding-in/Methodology_Crowding_in.pdf`).
+
 ## 2.2.0 (2026-11-20)
 - Added the "Crowding-in" project (African firm-level financial dataset) to Research and Projects.
 
