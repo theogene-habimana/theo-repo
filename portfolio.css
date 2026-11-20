@@ -237,3 +237,10 @@ a.resource-link:hover,a.resource-link:focus-visible{background:#191919;border-co
 .download-list small{display:block;color:#aaa;}
 .research-download-help{color:#aeb1b6;font-size:.92rem;margin-top:18px;}
 @media(max-width:600px){.research-project-card .project-heading h3{font-size:1.3rem}.research-project-card{padding:22px 16px}.resource-tile{min-height:112px}}
+
+/* Tailwind v4 preflight no longer sets a pointer cursor on buttons */
+button:not(:disabled),[role="button"]:not(:disabled){cursor:pointer;}
+
+.download-empty{color:#aaa;font-size:.92rem;margin:0;}
+.project-load-error{color:#b00020;}
+.research-project-card{scroll-margin-top:84px;}

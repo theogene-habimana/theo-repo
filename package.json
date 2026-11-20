@@ -1,0 +1,15 @@
+{
+  "name": "theogene-habimana-portfolio",
+  "version": "2.2.0",
+  "private": true,
+  "description": "Academic portfolio of Theogene Habimana, PhD (static site).",
+  "scripts": {
+    "build:css": "tailwindcss -i assets/css/input.css -o assets/css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i assets/css/input.css -o assets/css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "7.3.1",
+    "@tailwindcss/cli": "4.3.5",
+    "tailwindcss": "4.3.5"
+  }
+}

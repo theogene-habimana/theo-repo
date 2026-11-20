@@ -5,17 +5,15 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Research projects by Theogene Habimana, with downloadable code, data and methodology.">
 
   <link href="favicon.png" rel="icon" type="image/png"/>
 
   <title>Research and Projects | Theogene Habimana</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/tailwind.css">
 
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    rel="stylesheet"
-  />
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
 
   <link href="portfolio.css" rel="stylesheet"/>
 </head>
@@ -25,7 +23,7 @@
 <header class="relative h-[60vh] flex items-center justify-center">
 
   <img
-    alt="Background"
+    alt=""
     class="absolute w-full h-full object-cover z-[-1]"
     src="abc.jpg"
   />
@@ -46,7 +44,7 @@
       aria-label="Toggle navigation"
       aria-expanded="false"
     >
-      <i class="fa fa-bars"></i>
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
     </button>
 
     <ul
@@ -70,18 +68,6 @@
         </a>
       </li>
 
-      <li>
-        <a class="font-bold underline" href="cybersecurity.html">
-          Cybersecurity
-        </a>
-      </li>
-
-      <li>
-        <a class="font-bold underline" href="artificial-intelligence.html">
-          Artificial Intelligence
-        </a>
-      </li>
-
     </ul>
   </nav>
 
@@ -98,209 +84,19 @@
     <h2>Research and Projects</h2>
 
     <p>
-      My ongoing research also includes a project funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490), which investigates the role of artificial intelligence (AI) and cybersecurity risks in corporate financing decisions using machine learning and computational text analysis. As part of this project, I have developed firm-level measures of AI adoption and cybersecurity risk by systematically extracting and analyzing information from corporate annual reports of companies across 91 countries. These measures provide a foundation for examining how emerging technologies and cybersecurity-related risks influence firms’ financing decisions and capital structures in both developed and emerging markets.
+      My ongoing research includes a project funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490), which investigates the role of artificial intelligence (AI) and cybersecurity risks in corporate financing decisions using machine learning and computational text analysis. I have developed firm-level measures of AI adoption and cybersecurity risk from corporate annual reports of companies across 91 countries, as a foundation for examining how emerging technologies and cybersecurity-related risks influence financing decisions and capital structures in developed and emerging markets.
     </p>
 
   </div>
 
-  <div class="project-list">
-
-    <!-- ==================================
-         CYBERSECURITY RESEARCH PROJECT
-         ================================== -->
-
-    <article class="research-project-card" id="cybersecurity">
-
-      <div class="project-heading">
-        <i aria-hidden="true" class="fa-solid fa-shield-halved"></i>
-
-        <h3>
-          Cybersecurity Risks and Corporate Financial Resilience
-        </h3>
-      </div>
-
-      <p class="project-tag">Research in progress</p>
-
-      <h4>Research overview</h4>
-
-      <p class="research-overview">
-        My ongoing research also includes a project funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490), which investigates the role of artificial intelligence (AI) and cybersecurity risks in corporate financing decisions using machine learning and computational text analysis. As part of this project, I have developed firm-level measures of AI adoption and cybersecurity risk by systematically extracting and analyzing information from corporate annual reports of companies across 91 countries. These measures provide a foundation for examining how emerging technologies and cybersecurity-related risks influence firms’ financing decisions and capital structures in both developed and emerging markets.
-      </p>
-
-      <div class="project-divider"></div>
-
-      <h4>Research materials</h4>
-
-      <div class="project-resource-grid">
-
-        <!-- EXCEL DATASETS: TO BE ADDED -->
-
-        <a
-          aria-label="View Excel datasets for Cybersecurity Risks"
-          class="resource-tile resource-link"
-          href="cybersecurity.html#excel"
-        >
-          <i aria-hidden="true" class="fa-regular fa-file-excel"></i>
-
-          <strong>Excel datasets</strong>
-
-          <span>Open project page</span>
-        </a>
-
-        <!-- PYTHON SCRIPT: DIRECT DOWNLOAD -->
-
-        <a
-          aria-label="Download SEC EDGAR Cybersecurity Python script"
-          class="resource-tile resource-link"
-          href="files/cybersecurity/Sec_Edgar_Data_extraction.py"
-          download="Sec_Edgar_Data_extraction.py"
-        >
-          <i aria-hidden="true" class="fa-solid fa-code"></i>
-
-          <strong>Python scripts</strong>
-
-          <span>Download Python file</span>
-        </a>
-
-        <!-- RESEARCH RESULTS: TO BE ADDED -->
-
-        <a
-          aria-label="View Cybersecurity research results"
-          class="resource-tile resource-link"
-          href="cybersecurity.html#results"
-        >
-          <i aria-hidden="true" class="fa-solid fa-chart-column"></i>
-
-          <strong>Research results</strong>
-
-          <span>Open project page</span>
-        </a>
-
-        <!-- METHODOLOGY PDF: DIRECT DOWNLOAD -->
-
-        <a
-          aria-label="Download Cybersecurity research methodology"
-          class="resource-tile resource-link"
-          href="files/cybersecurity/Methodology_Cyber.pdf"
-          download="Methodology_Cyber.pdf"
-        >
-          <i aria-hidden="true" class="fa-regular fa-file-lines"></i>
-
-          <strong>Methodology</strong>
-
-          <span>Download PDF</span>
-        </a>
-
-      </div>
-
-      <p class="project-note">
-        Download the available cybersecurity Python extraction code
-        and research methodology. Additional datasets and research
-        results will be added when published.
-      </p>
-
-    </article>
-
-
-    <!-- ==================================
-         ARTIFICIAL INTELLIGENCE PROJECT
-         ================================== -->
-
-    <article
-      class="research-project-card"
-      id="artificial-intelligence"
-    >
-
-      <div class="project-heading">
-
-        <i aria-hidden="true" class="fa-solid fa-brain"></i>
-
-        <h3>Artificial Intelligence and Corporate Financing</h3>
-
-      </div>
-
-      <p class="project-tag">Research in progress</p>
-
-      <h4>Research overview</h4>
-
-      <p class="research-overview">
-        My ongoing research also includes a project funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490), which investigates the role of artificial intelligence (AI) and cybersecurity risks in corporate financing decisions using machine learning and computational text analysis. As part of this project, I have developed firm-level measures of AI adoption and cybersecurity risk by systematically extracting and analyzing information from corporate annual reports of companies across 91 countries. These measures provide a foundation for examining how emerging technologies and cybersecurity-related risks influence firms’ financing decisions and capital structures in both developed and emerging markets.
-      </p>
-
-      <div class="project-divider"></div>
-
-      <h4>Research materials</h4>
-
-      <div class="project-resource-grid">
-
-        <!-- AI EXCEL DATASETS -->
-
-        <a
-          aria-label="View AI Excel datasets"
-          class="resource-tile resource-link"
-          href="artificial-intelligence.html#excel"
-        >
-          <i aria-hidden="true" class="fa-regular fa-file-excel"></i>
-
-          <strong>Excel datasets</strong>
-
-          <span>Open project page</span>
-        </a>
-
-        <!-- AI PYTHON SCRIPTS -->
-
-        <a
-          aria-label="View AI Python scripts"
-          class="resource-tile resource-link"
-          href="artificial-intelligence.html#code"
-        >
-          <i aria-hidden="true" class="fa-solid fa-code"></i>
-
-          <strong>Python scripts</strong>
-
-          <span>Open project page</span>
-        </a>
-
-        <!-- AI RESEARCH RESULTS -->
-
-        <a
-          aria-label="View AI research results"
-          class="resource-tile resource-link"
-          href="artificial-intelligence.html#results"
-        >
-          <i aria-hidden="true" class="fa-solid fa-chart-column"></i>
-
-          <strong>Research results</strong>
-
-          <span>Open project page</span>
-        </a>
-
-        <!-- AI METHODOLOGY -->
-
-        <a
-          aria-label="View AI methodology"
-          class="resource-tile resource-link"
-          href="artificial-intelligence.html#methodology"
-        >
-          <i aria-hidden="true" class="fa-regular fa-file-lines"></i>
-
-          <strong>Methodology</strong>
-
-          <span>Open project page</span>
-        </a>
-
-      </div>
-
-      <p class="project-note">
-        Open the dedicated Artificial Intelligence project page
-        to browse downloadable research materials when published.
-      </p>
-
-    </article>
-
+  <div class="project-list" id="projectList">
+    <noscript><p>JavaScript is needed to list the research projects and downloads.</p></noscript>
   </div>
 
 </main>
+
+<script src="projects-data.js" defer></script>
+<script src="research-projects.js" defer></script>
 
 <script>
   // Mobile menu
