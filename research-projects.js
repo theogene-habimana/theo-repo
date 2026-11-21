@@ -6,12 +6,15 @@
 
   const SAFE_ID = /^[a-z0-9][a-z0-9-]*$/;
   const SAFE_FILE = /^[a-zA-Z0-9][a-zA-Z0-9._ -]*$/;
+  const SAFE_URL = /^https:\/\/(drive\.google\.com|docs\.google\.com|zenodo\.org|doi\.org|osf\.io|github\.com)\//;
   const SAFE_ICON = /^fa-(solid|regular) fa-[a-z0-9-]+$/;
   const CATEGORIES = [
-    { key: 'excel', label: 'Excel datasets', icon: 'fa-regular fa-file-excel', empty: 'No Excel datasets published yet.' },
+    { key: 'excel', label: 'Datasets', icon: 'fa-regular fa-file-excel', empty: 'No datasets published yet.' },
     { key: 'code', label: 'Python scripts', icon: 'fa-solid fa-code', empty: 'No scripts published yet.' },
     { key: 'results', label: 'Research results', icon: 'fa-solid fa-chart-column', empty: 'No research results published yet.' },
-    { key: 'methodology', label: 'Methodology', icon: 'fa-regular fa-file-lines', empty: 'No methodology published yet.' }
+    { key: 'methodology', label: 'Methodology', icon: 'fa-regular fa-file-lines', empty: 'No methodology published yet.' },
+    // Optional group: only shown for projects that list source documents
+    { key: 'documents', label: 'Source documents', icon: 'fa-solid fa-folder-open', optional: true }
   ];
 
   const el = (tag, attrs = {}, text) => {
@@ -48,29 +51,37 @@
 
     const groups = el('div', { class: 'research-downloads' });
     for (const cat of CATEGORIES) {
+      if (cat.optional && !(Array.isArray(manifest[cat.key]) && manifest[cat.key].length)) continue;
       const group = el('section', { class: 'download-group', 'aria-label': cat.label });
       const h = el('h4');
       h.append(icon(cat.icon), ' ' + cat.label);
       group.appendChild(h);
 
       const items = (Array.isArray(manifest[cat.key]) ? manifest[cat.key] : [])
-        .filter(i => i && typeof i.path === 'string' && SAFE_FILE.test(i.path) && !i.path.includes('..'));
+        .filter(i => i && (
+          (typeof i.path === 'string' && SAFE_FILE.test(i.path) && !i.path.includes('..')) ||
+          (typeof i.url === 'string' && SAFE_URL.test(i.url))));
       if (!items.length) {
         group.appendChild(el('p', { class: 'download-empty' }, cat.empty));
       } else {
         const ul = el('ul', { class: 'download-list' });
         for (const item of items) {
           const li = el('li');
-          const ext = (item.path.split('.').pop() || '').toUpperCase();
-          const a = el('a', {
-            class: 'download-button',
-            href: `files/${project.folder}/${encodeURIComponent(item.path)}`,
-            download: item.path,
-            'aria-label': `Download ${item.title || item.path} (${ext})`
-          });
-          a.append(icon('fa-solid fa-download'), ' Download ' + ext);
-          li.append(el('strong', { class: 'download-title' }, item.title || item.path));
+          li.append(el('strong', { class: 'download-title' }, item.title || item.path || item.url));
           if (item.description) li.appendChild(el('small', {}, item.description));
+          let a;
+          if (item.url) {
+            // External link (for example a shared Google Drive folder)
+            a = el('a', { class: 'download-button', href: item.url, target: '_blank', rel: 'noopener noreferrer',
+                          'aria-label': `${item.label || 'Open link'}: ${item.title || ''} (opens in a new tab)` });
+            a.append(icon('fa-solid fa-arrow-up-right-from-square'), ' ' + (item.label || 'Open link'));
+          } else {
+            const ext = (item.path.split('.').pop() || '').toUpperCase();
+            a = el('a', { class: 'download-button', href: `files/${project.folder}/${encodeURIComponent(item.path)}`, download: item.path,
+                          'aria-label': `Download ${item.title || item.path} (${ext})` });
+            a.append(icon('fa-solid fa-download'), ' Download ' + ext);
+            if (item.size) a.append(el('span', { class: 'download-size' }, ' · ' + item.size));
+          }
           li.appendChild(a);
           ul.appendChild(li);
         }
