@@ -18,7 +18,14 @@ window.RESEARCH_PROJECTS = [
           "description": "Download Python extraction script"
         }
       ],
-      "results": [],
+      "results": [
+        {
+          "title": "Cybersecurity research results",
+          "label": "Open Google Drive",
+          "url": "https://drive.google.com/drive/folders/1a1CvE0vnrON6JtVf-bLaPj__crFok_Mj?usp=sharing",
+          "description": "Research results, hosted on Google Drive"
+        }
+      ],
       "methodology": [
         {
           "title": "Cybersecurity Research Methodology",
@@ -44,7 +51,14 @@ window.RESEARCH_PROJECTS = [
           "description": "Download Python source code for extracting AI-related information from corporate annual reports"
         }
       ],
-      "results": [],
+      "results": [
+        {
+          "title": "Artificial Intelligence research results",
+          "label": "Open Google Drive",
+          "url": "https://drive.google.com/drive/folders/1rAQnFWHnzGPW0XvPfl0ebD0V1um-Spa1?usp=sharing",
+          "description": "Research results, hosted on Google Drive"
+        }
+      ],
       "methodology": [
         {
           "title": "Artificial Intelligence Research Methodology",
