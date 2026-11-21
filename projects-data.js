@@ -8,14 +8,14 @@ window.RESEARCH_PROJECTS = [
     "icon": "fa-solid fa-shield-halved",
     "status": "Research in progress",
     "folder": "cybersecurity",
-    "overview": "This project builds firm-level measures of cybersecurity risk by extracting and classifying cybersecurity-related disclosures from corporate annual reports filed with the U.S. SEC (EDGAR), and relates them to firms’ financing decisions, capital structure and financial resilience. It is part of research funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490).",
+    "overview": "This project builds firm-level measures of cybersecurity risk by extracting and classifying cybersecurity-related disclosures from corporate annual reports. The data come from the U.S. Securities and Exchange Commission (SEC) EDGAR database, accessed through the SEC EDGAR API with Python code. The measures are related to firms’ financing decisions, capital structure and financial resilience. It is part of research funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490).",
     "files": {
       "excel": [],
       "code": [
         {
           "title": "SEC EDGAR Cybersecurity Data Extraction",
           "path": "Sec_Edgar_Data_extraction.py",
-          "description": "Download Python extraction script"
+          "description": "Python code that retrieves company filings from the SEC EDGAR database through its API and extracts cybersecurity disclosures"
         }
       ],
       "results": [
@@ -41,14 +41,14 @@ window.RESEARCH_PROJECTS = [
     "icon": "fa-solid fa-brain",
     "status": "Research in progress",
     "folder": "artificial-intelligence",
-    "overview": "This project builds firm-level measures of artificial intelligence (AI) adoption by systematically extracting and analyzing AI-related disclosures in corporate annual reports, and examines how AI influences firms’ financing decisions and capital structures in developed and emerging markets. It is part of research funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490).",
+    "overview": "This project builds firm-level measures of artificial intelligence (AI) adoption by systematically extracting and analyzing AI-related disclosures in corporate annual reports. The data come from the U.S. Securities and Exchange Commission (SEC) EDGAR database, accessed through the SEC EDGAR API with Python code. The project examines how AI influences firms’ financing decisions and capital structures in developed and emerging markets. It is part of research funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490).",
     "files": {
       "excel": [],
       "code": [
         {
           "title": "Artificial Intelligence Data Extraction",
           "path": "ai_data_extraction_code.py",
-          "description": "Download Python source code for extracting AI-related information from corporate annual reports"
+          "description": "Python code that retrieves company filings from the SEC EDGAR database through its API and extracts AI-related disclosures"
         }
       ],
       "results": [
