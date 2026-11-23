@@ -10,7 +10,14 @@ window.RESEARCH_PROJECTS = [
     "folder": "cybersecurity",
     "overview": "This project builds firm-level measures of cybersecurity risk by extracting and classifying cybersecurity-related disclosures from corporate annual reports. The data come from the U.S. Securities and Exchange Commission (SEC) EDGAR database, accessed through the SEC EDGAR API with Python code. The measures are related to firms’ financing decisions, capital structure and financial resilience. It is part of research funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490).",
     "files": {
-      "excel": [],
+      "excel": [
+        {
+          "title": "Research datasets",
+          "label": "Open Google Drive",
+          "url": "https://drive.google.com/drive/folders/1k_dMo5LXLkTQadrsN11RgdCU4Z3MoUxm?usp=sharing",
+          "description": "Access research datasets hosted on Google Drive"
+        }
+      ],
       "code": [
         {
           "title": "SEC EDGAR Cybersecurity Data Extraction",
@@ -39,11 +46,18 @@ window.RESEARCH_PROJECTS = [
     "id": "artificial-intelligence",
     "title": "Artificial Intelligence and Corporate Financing",
     "icon": "fa-solid fa-brain",
-    "status": "Research in progress",
+    "status": "Research in progres",
     "folder": "artificial-intelligence",
     "overview": "This project builds firm-level measures of artificial intelligence (AI) adoption by systematically extracting and analyzing AI-related disclosures in corporate annual reports. The data come from the U.S. Securities and Exchange Commission (SEC) EDGAR database, accessed through the SEC EDGAR API with Python code. The project examines how AI influences firms’ financing decisions and capital structures in developed and emerging markets. It is part of research funded by the Foundation for Economic Education (LSR 2025, Application No. 32-16490).",
     "files": {
-      "excel": [],
+      "excel": [
+        {
+          "title": "Research datasets",
+          "label": "Open Google Drive",
+          "url": "https://drive.google.com/drive/folders/1Q0ZOX7lpz1txSZnsAwIDTle_i-QsLbrv?usp=sharing",
+          "description": "Access research datasets hosted on Google Drive"
+        }
+      ],
       "code": [
         {
           "title": "Artificial Intelligence Data Extraction",
@@ -110,7 +124,14 @@ window.RESEARCH_PROJECTS = [
           "description": "Extracts accounting data from financial statement PDFs using keyword matching"
         }
       ],
-      "results": [],
+      "results": [
+        {
+          "title": "Crowding-in Research Results (Three Excel Files)",
+          "label": "Open Google Drive",
+          "url": "https://drive.google.com/drive/folders/1V0yNyhQzOy0yFKSNYR6q7vb7lX5QTHeQ?usp=sharing",
+          "description": "Research results provided as three Excel files in a shared Google Drive folder"
+        }
+      ],
       "methodology": [
         {
           "title": "Crowding-in Research Methodology",
